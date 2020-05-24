@@ -22,7 +22,7 @@
         app:layout_constraintBottom_toTopOf="@+id/regresar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtUsuario7" />
+        app:layout_constraintTop_toBottomOf="@+id/confcontra" />
 
     <TextView
         android:id="@+id/registroLogin2"
@@ -35,13 +35,13 @@
         android:textAllCaps="false"
         android:textColor="#FF5722"
         android:textSize="36sp"
-        app:layout_constraintBottom_toTopOf="@+id/edtUsuario4"
+        app:layout_constraintBottom_toTopOf="@+id/nombreUsuario"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/edtUsuario7"
+        android:id="@+id/confcontra"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="36dp"
@@ -53,10 +53,10 @@
         app:layout_constraintBottom_toTopOf="@+id/Crear"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtUsuario6" />
+        app:layout_constraintTop_toBottomOf="@+id/contra" />
 
     <EditText
-        android:id="@+id/edtUsuario6"
+        android:id="@+id/contra"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="38dp"
@@ -65,13 +65,13 @@
         android:hint="Contraseña"
         android:inputType="textPersonName"
         android:paddingLeft="5dp"
-        app:layout_constraintBottom_toTopOf="@+id/edtUsuario7"
+        app:layout_constraintBottom_toTopOf="@+id/confcontra"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtUsuario4" />
+        app:layout_constraintTop_toBottomOf="@+id/nombreUsuario" />
 
     <EditText
-        android:id="@+id/edtUsuario4"
+        android:id="@+id/nombreUsuario"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="28dp"
@@ -80,7 +80,7 @@
         android:hint="Nombre de Usuario"
         android:inputType="textPersonName"
         android:paddingLeft="5dp"
-        app:layout_constraintBottom_toTopOf="@+id/edtUsuario6"
+        app:layout_constraintBottom_toTopOf="@+id/contra"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/registroLogin2" />
