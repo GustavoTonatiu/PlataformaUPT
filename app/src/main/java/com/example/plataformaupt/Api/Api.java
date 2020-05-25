@@ -1,6 +1,7 @@
 package com.example.plataformaupt.Api;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 
 import java.io.IOException;
 
@@ -25,10 +26,10 @@ public class Api {
 
         public static Retrofit getApi(Context context){
             if(retrofit == null){
-            /*
+
             SharedPreferences preferencias = context.getSharedPreferences("credenciales", Context.MODE_PRIVATE);
             token = preferencias.getString("TOKEN", "");
-            */
+
                 OkHttpClient client = new OkHttpClient.Builder().addInterceptor(new Interceptor() {
                     @Override
                     public Response intercept(Chain chain) throws IOException {
