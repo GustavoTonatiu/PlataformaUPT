@@ -60,6 +60,7 @@ public class Notificaciones extends AppCompatActivity {
                     String URL="https://fcm.googleapis.com/fcm/send";
                     JsonObjectRequest request= new JsonObjectRequest(Request.Method.POST,URL,json,null,null){
                         @Override
+
                         public Map<String, String> getHeaders() {
                             Map<String,String>header=new HashMap<>();
                             header.put("content-type","application/json");
