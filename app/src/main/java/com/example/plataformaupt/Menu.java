@@ -23,6 +23,15 @@ public class Menu extends AppCompatActivity {
         WebSettings config=link.getSettings();
         config.setJavaScriptEnabled(true);
         link.loadUrl(url);
+        Button notificacionButton=(Button)findViewById(R.id.btnnot);
+
+        notificacionButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i=new Intent(getApplicationContext(),Notificaciones.class);
+                startActivity(i);
+            }
+        });
 
 
         Button cerr=(Button)findViewById(R.id.closeS);

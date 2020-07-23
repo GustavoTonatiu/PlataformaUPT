@@ -5,30 +5,30 @@
     android:id="@+id/principal"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context="com.example.plataformaupt.MainActivity"
     tools:layout_editor_absoluteX="2dp"
     tools:layout_editor_absoluteY="-22dp">
 
     <Button
         android:id="@+id/btnLogin"
-        android:layout_width="199dp"
-        android:layout_height="41dp"
-        android:layout_marginEnd="104dp"
-        android:layout_marginRight="104dp"
-        android:layout_marginBottom="45dp"
+        android:layout_width="200dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="93dp"
+        android:layout_marginRight="93dp"
+        android:layout_marginBottom="33dp"
         android:background="#EC6311"
         android:shadowColor="@color/colorPrimaryDark"
         android:text="INICIAR SESION"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintBottom_toTopOf="@+id/registroLogin"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/registroLogin"
         app:layout_constraintTop_toBottomOf="@+id/edtContra" />
 
     <EditText
         android:id="@+id/username"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="11dp"
+        android:layout_marginBottom="43dp"
         android:backgroundTint="@android:color/darker_gray"
         android:ems="10"
         android:hint="Usuario"
@@ -36,7 +36,6 @@
         android:paddingLeft="5dp"
         app:layout_constraintBottom_toTopOf="@+id/edtContra"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Logo" />
 
@@ -44,7 +43,7 @@
         android:id="@+id/edtContra"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="54dp"
+        android:layout_marginBottom="73dp"
         android:backgroundTint="@android:color/darker_gray"
         android:ems="10"
         android:hint="Contraseña"
@@ -52,7 +51,6 @@
         android:paddingLeft="5dp"
         app:layout_constraintBottom_toTopOf="@+id/btnLogin"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/username" />
 
@@ -60,27 +58,30 @@
         android:id="@+id/registroLogin"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="172dp"
+        android:layout_marginBottom="42dp"
+        android:gravity="center_horizontal"
         android:text="CREAR CUENTA"
         android:textAlignment="center"
         android:textAllCaps="false"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
 
     <ImageView
         android:id="@+id/Logo"
-        android:layout_width="227dp"
+        android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="34dp"
-        android:layout_marginEnd="104dp"
-        android:layout_marginRight="104dp"
-        android:layout_marginBottom="67dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginLeft="61dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginRight="61dp"
+        android:layout_marginBottom="34dp"
         app:layout_constraintBottom_toTopOf="@+id/username"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/download" />
 
