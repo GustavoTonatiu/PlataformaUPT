@@ -56,6 +56,7 @@ public class Notificaciones extends AppCompatActivity {
                     notificacion.put("titulo","A todos");
                     notificacion.put("titulo","A todos");
                     json.put("data",notificacion);
+
                     String URL="https://fcm.googleapis.com/fcm/send";
                     JsonObjectRequest request= new JsonObjectRequest(Request.Method.POST,URL,json,null,null){
                         @Override
