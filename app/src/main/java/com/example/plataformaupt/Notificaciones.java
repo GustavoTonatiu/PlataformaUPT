@@ -53,7 +53,6 @@ public class Notificaciones extends AppCompatActivity {
                    // String token="dTUMKlECQjeQRbP63DWtkO:APA91bF1QmAlfi0zfUXq87mUvip3eOuYa6sAmyYFQb49Ojjaj2J7LKfqpK-xLHFARh8-DjNDkz3dwhxVYXV3Vd_rLsZa1TuyRJHnHylDNE-zNVyhWrQdlFFNoSLVX8D5WSdd6hm3-DAF";
                     json.put("to","/topics/"+"atodos");
                     JSONObject notificacion=new JSONObject();
-
                     notificacion.put("titulo","A todos");
                     notificacion.put("titulo","A todos");
                     json.put("data",notificacion);
